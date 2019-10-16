@@ -111,7 +111,7 @@ h2, h4, .h2, .h4 {
 }
 
 h5, h6, .h5, .h6 {
-  font-family: circe-slab-c, serif;
+  font-family: proxima-nova, sans-serif;
   text-transform:  uppercase;
 }
 h3.contact-info {
@@ -331,7 +331,7 @@ color: rgba(255, 255, 255, 0.5) !important;
 
 @media screen and (max-width: 768px) {
   .site-cover .btn {
-    font-family: circe-slab-c, serif;
+    font-family: proxima-nova, sans-serif;
 text-transform: uppercase;
 width: 100% !important;
     border: 1px solid red;
@@ -424,7 +424,7 @@ width: 100% !important;
 }
 
 .menu-item .menu-price {
-  font-family: circe-slab-c, serif;
+  font-family: proxima-nova, sans-serif;
   text-transform: uppercase;
   font-size: 24px;
 }
@@ -476,7 +476,7 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center fi
   padding-left: 30px;
   padding-right: 30px;
   font-size: 16px;
-  font-family: circe-slab-c, serif;
+  font-family: proxima-nova, sans-serif;
   text-transform: uppercase;
 }
 
@@ -646,8 +646,8 @@ div.center-btn {
 }
 
 .site-animate {
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
 }
 
 .bg-primary {
