@@ -316,18 +316,52 @@ color: rgba(255, 255, 255, 0.5) !important;
   }
 }
 
+
+
+h5.welcome {
+  font-family: rig-shaded-medium-face; 
+  color: #79171a; 
+  text-shadow: #030303 2px 2px 0px; 
+  letter-spacing: 0.2em;
+}
+
+h1.main-title {
+  color: #BA783C; 
+  text-shadow: #ffffff 1px 1px 0px, #353434 4px 4px 0px; 
+  font-size: 110px;"
+}
+
+
+.site-subheading {
+  color: #357ca6;  
+  font-size: 60px; 
+  text-shadow: #000000 0.5px 0.5px 0px;
+}
+
+@media screen and (max-width: 450px) {
+  h5.welcome {
+    font-family: rig-shaded-medium-face; 
+    color: #79171a; 
+    text-shadow: #030303 2px 2px 0px; 
+    letter-spacing: 0.2em;
+  }
+
+h1.main-title {
+  font-size: 85px;"
+  
+}
+
+.site-subheading {
+  font-size: 45px; 
+}
+
+}
+
 .site-cover .site-subheading, .site-cover p {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
 }
 
-.site-subheading {
-  color: #357ca6;  
-
-  font-size: 60px; 
-
-  text-shadow: #000000 0.5px 0.5px 0px;
-}
 
 @media screen and (max-width: 768px) {
   .site-cover .btn {
