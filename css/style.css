@@ -320,20 +320,21 @@ color: rgba(255, 255, 255, 0.5) !important;
 
 h5.welcome {
   font-family: rig-shaded-medium-face; 
-  color: #79171a; 
+  color: #00ACB8; 
   text-shadow: #030303 2px 2px 0px; 
   letter-spacing: 0.2em;
 }
 
 h1.main-title {
-  color: #BA783C; 
-  text-shadow: #ffffff 1px 1px 0px, #353434 4px 4px 0px; 
-  font-size: 110px;"
+  color: #231F20; 
+  text-shadow: #ffffff 1px 1px 0px, #571B17 4px 4px 0px; 
+  font-size: 120px;
+  letter-spacing: 0.1em;
 }
 
 
 .site-subheading {
-  color: #357ca6;  
+  color: #B79771;  
   font-size: 60px; 
   text-shadow: #000000 0.5px 0.5px 0px;
 }
@@ -347,7 +348,7 @@ h1.main-title {
   }
 
 h1.main-title {
-  font-size: 85px;"
+  font-size: 85px;
   
 }
 
@@ -576,16 +577,16 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center fi
   border-color: rgba(255, 255, 255, 0.8);
   background: none;
   border-radius: 0px;
-  border-width: 2px;
-  text-shadow: 1px 1px 1px #cb8402;
+  border-width: 1.5px;
+  text-shadow: 1px 1px 1px #231F20;
 
 }
 
 .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
-  background: #fff;
+  background: #00ACB8;
   border-color: #fff;
-  color: #000;
-  text-shadow: 1px 1px 1px #421C19;
+  color: #231F20;
+  text-shadow: 1px 1px 1px #fff;
 
 }
 
