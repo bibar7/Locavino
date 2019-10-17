@@ -13,8 +13,8 @@
   src:  url('../fonts/playlist/Playlist-Script.otf')  format('opentype'),
         url('../fonts/playlist/playlist_script-webfont.woff2') format('woff2'),
         url('../fonts/playlist/Playlist-Script.woff') format('woff'), 
-        url('../fonts/playlist/Playlist-Script.ttf') format('truetype'), 
-        url('../fonts/playlist/Playlist-Script.svg#Playlist-Script') format('svg');
+        url('../fonts/playlist/Playlist-Script.ttf') format('truetype');
+        /* url('../fonts/playlist/Playlist-Script.svg#Playlist-Script') format('svg'); */
   font-weight: normal;
   font-style: normal;
 }
