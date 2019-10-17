@@ -100,7 +100,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
       <div class="container">
         <div class="row align-items-center justify-content-center text-center site-vh-100">
           <div class="col-md-12">
-            <h5 class="welcome">Welcome to</h5>
+            <h5 class="welcome" style="margin-top: 20px;">Welcome to</h5>
             <h1 class="site-heading site-animate mb-3 main-title" itemprop="name">LOCAVINO</h1>
             <h2 class="site-subheading">Your new favorite neighborhood wine café!</h2>    
                 <!-- <p><a href="#section-menu" class="btn btn-outline-white btn-lg site-animate" data-toggle="modal" data-target="#reservationModal" itemprop="acceptsReservations">Book A Table</a></p> -->
@@ -539,7 +539,9 @@ content="The official home website for Locavino, a locally sourced wine bar in d
         </div>
         <div class="row">
           <div class="col-md-6 site-animate">
-            <form action="" method="post">
+              <div id="mapid" style="width: 100%; height: 400px;"></div>
+
+            <!-- <form action="" method="post">
               <div class="form-group">
                 <label for="name" class="sr-only">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Name">
@@ -557,7 +559,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
                 <input type="submit" class="btn btn-primary btn-lg" value="Send Message">
               </div>
               </div>
-            </form>
+            </form> -->
 
           </div>
 
@@ -567,8 +569,8 @@ content="The official home website for Locavino, a locally sourced wine bar in d
               <h3 itemprop="name" class="contact-info">LOCAVINO</h3>
               <br><h5 class="contact-info">Address:</h5> <div itemprop="address"><span itemprop="streetAddress">8519 Fenton Street </span><br> <span itemprop="addressLocality">Silver Spring</span>, 
                 <span itemprop="addressRegion">MD</span> <span itemprop="postalCode">20910</span></div>
-              <h5 class="contact-info">Phone:</h5><div style="color: #357ca6 !important;" itemprop="telephone">(301) 448-1819</div>
-              <h5 class="contact-info">Email:</h5><a href="mailto:cheers@locavino.com" itemprop="email" style="color: #357ca6;">cheers@locavino.com</a><br>
+              <h5 class="contact-info">Phone:</h5><div class="contact-accent" itemprop="telephone">(301) 448-1819</div>
+              <h5 class="contact-info">Email:</h5><a class="contact-accent" href="mailto:cheers@locavino.com" itemprop="email">cheers@locavino.com</a><br>
               <h5 class="contact-info">Hours: </h5>
               <div itemscope itemtype="http://schema.org/OpeningHoursSpecification">
                 <time itemprop="openingHours" datetime=“Mo-Th 11:00-22:00”><span itemprop="dayOfWeek">Mondays-Thursdays</span> <span itemprop="opens">11:00 AM</span> - <span itemprop="closes">10:00 PM</span></time>; <br>
@@ -597,7 +599,6 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
     </section>
     </div>
-    <div id="mapid" style="width: 100%; height: 400px;"></div>
     <script>
     
       var mymap = L.map('mapid').setView([38.997, -77.025], 16);
