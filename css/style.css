@@ -566,8 +566,8 @@ button.navbar-toggler:focus {
   outline-color: black !important;
 }
 
-.contact-accent {
-  color: #00ACB8 !important;
+a.contact-accent {
+  color: #C5802A !important;
 }
 
 .form-control {
