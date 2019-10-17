@@ -1,70 +1,25 @@
-
 @font-face {
-  font-family: 'steelfishregular';
-  src: url('../fonts/steelfish/typodermic_-_steelfishrg-regular-webfont.woff2') format('woff2'),
-       url('../fonts/steelfish/typodermic_-_steelfishrg-regular-webfont.woff') format('woff');
+  font-family: 'TheNational-Bold';
+  src:    url('TheNational-Bold.eot') format('embedded-opentype'),
+  url('TheNational-Bold.otf')  format('opentype'),
+  url('thenational-bold-webfont.woff2') format('woff2')
+	     url('TheNational-Bold.woff') format('woff'), url('TheNational-Bold.ttf')  format('truetype'), url('TheNational-Bold.svg#TheNational-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'Playlist-Script';
+  src:  url('Playlist-Script.otf')  format('opentype'),
+        url('fonts/playlist/playlist_script-webfont.woff2') format('woff2'),
+        url('Playlist-Script.woff') format('woff'), 
+        url('Playlist-Script.ttf') format('truetype'), 
+        url('Playlist-Script.svg#Playlist-Script') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
-@font-face {
-  font-family: 'quente_script_blackblack';
-  src: url('../fonts/quente/majestype_-_quentescript-black-webfont.woff2') format('woff2'),
-       url('../fonts/quente/majestype_-_quentescript-black-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'quente_scriptbold';
-  src: url('../fonts/quente/majestype_-_quentescript-bold-webfont.woff2') format('woff2'),
-       url('../fonts/quente/majestype_-_quentescript-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'quente_script_penpen';
-  src: url('../fonts/quente/majestype_-_quentescript-pen-webfont.woff2') format('woff2'),
-       url('../fonts/quente/majestype_-_quentescript-pen-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'quente_script_semiboldSBd';
-  src: url('../fonts/quente/majestype_-_quentescript-semibold-webfont.woff2') format('woff2'),
-       url('../fonts/quente/majestype_-_quentescript-semibold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'quente_scriptregular';
-  src: url('../fonts/quente/majestype_-_quentescript-webfont.woff2') format('woff2'),
-       url('../fonts/quente/majestype_-_quentescript-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
 
 html {
   overflow-x: hidden;
@@ -72,7 +27,7 @@ html {
 }
 
 body {
-  font-family: proxima-nova, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   /* position: relative; */
 
@@ -101,17 +56,17 @@ h1, h2, h3, h4, h5,
 }
 
 h1, h3, .h1, .h3 {
-  font-family: "steelfishregular", sans-serif;
+  font-family: 'TheNational-Bold', sans-serif;
   letter-spacing: 0.2em;
 }
 
 
 h2, h4, .h2, .h4 {
-  font-family: "quente_script_penpen", cursive; 
+  font-family: 'Playlist-Script', cursive; 
 }
 
 h5, h6, .h5, .h6 {
-  font-family: proxima-nova, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform:  uppercase;
 }
 h3.contact-info {
@@ -124,7 +79,7 @@ h3.contact-info {
   font-weight: 200;
 }
 h5.contact-info {
-  font-family: 'steelfishregular';
+  font-family: 'TheNational-Bold';
 font-size: 20px;
 color: white;
 margin-top: 2px;
@@ -155,7 +110,7 @@ text-shadow: 2px 2px 1px black;
 
 .site-navbar-light .navbar-nav > .nav-item > .nav-link {
   font-size: 18px;
-  font-family: "steelfishregular", sans-serif;
+  font-family: "The National", sans-serif;
   text-transform: uppercase;
   text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff;
   letter-spacing: .2em;
@@ -319,7 +274,8 @@ color: rgba(255, 255, 255, 0.5) !important;
 
 
 h5.welcome {
-  font-family: rig-shaded-medium-face; 
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; 
   color: #00ACB8; 
   text-shadow: #030303 2px 2px 0px; 
   letter-spacing: 0.2em;
@@ -341,7 +297,8 @@ h1.main-title {
 
 @media screen and (max-width: 450px) {
   h5.welcome {
-    font-family: rig-shaded-medium-face; 
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; 
     color: #79171a; 
     text-shadow: #030303 2px 2px 0px; 
     letter-spacing: 0.2em;
@@ -366,7 +323,7 @@ h1.main-title {
 
 @media screen and (max-width: 768px) {
   .site-cover .btn {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Raleway', sans-serif;
 text-transform: uppercase;
 width: 100% !important;
     border: 1px solid red;
@@ -459,7 +416,7 @@ width: 100% !important;
 }
 
 .menu-item .menu-price {
-  font-family: proxima-nova, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 24px;
 }
@@ -489,7 +446,7 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center fi
   /* background: #darken fafafa, 4% !important; */
 }
 
-.site-custom-gutters {7
+.site-custom-gutters { 
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -511,18 +468,18 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center fi
   padding-left: 30px;
   padding-right: 30px;
   font-size: 16px;
-  font-family: proxima-nova, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
 
 .btn.btn-lg {
-  font-family: 'steelfishregular';
+  font-family: 'TheNational-Bold';
   font-size: 25px !important;
   padding: 13px 40px !important;
 }
 
 .btn.btn-sm {
-  font-family: 'steelfishregular';
+  font-family: 'TheNational-Bold';
   padding: 10px 20px;
   font-size: 12px;
 }
@@ -701,13 +658,15 @@ section, footer {
   font-size: 24px;
   letter-spacing: .2em;
   color: #ffffff;
-  font-family: 'steelfishregular', sans-serif;
+  font-family: 'TheNational-Bold', sans-serif;
   font-weight: 500;
 }
 
 .site-section .site-primary-title {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; 
   font-size: 56px;
-
+  font-weight: 900;
   margin-top: 0;
   margin-bottom: 30px;
 }
