@@ -443,7 +443,7 @@ width: 100% !important;
 }
 
 section.bg-light {
-background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center fixed; 
+background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -658,7 +658,7 @@ div.center-btn {
 }
 
 section, footer {
-  background: url("bg/wood_0007_BA783E.jpg") no-repeat center center fixed; 
+  background: url("bg/wood_0007_BA783E.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
