@@ -307,7 +307,11 @@ text-shadow: #000000cc 1px 1px 0px !important;
   }
 }
 
+.contain-header {
+  min-height: 80vh;
+  padding: 15vh;
 
+}
 
 h5.welcome {
   font-family: 'Montserrat', sans-serif;
@@ -329,6 +333,11 @@ h1.main-title {
   color: #B79771;  
   font-size: 60px; 
   text-shadow: #000000 0.5px 0.5px 0px;
+}
+
+.view-menu-btn {
+  margin-top: 5vh;
+  padding: 0 !important;
 }
 
 @media screen and (max-width: 450px) {
@@ -739,11 +748,15 @@ div.learn-more {
   padding-bottom: 0;
 }
 
+div.menu-btn {
+  margin-top: 3%;
+}
+
 #section-about p {
 margin-right: 2em;
 }
 
-.about-image {
+.column-center {
   display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -777,6 +790,8 @@ margin-right: 2em;
 #section-offer {
   padding: 12em 0;
 }
+
+
 
 .site-section {
   padding: 5em 0;
@@ -894,6 +909,10 @@ footer a:hover {
 
 .site-pricing ul li {
   margin-bottom: 10px;
+}
+
+.contact-btn {
+margin-top: 3%;
 }
 
 .site-footer-social li {
@@ -1104,7 +1123,7 @@ div.bg-image {
 
 img.visit-image {
   display: block;
-  margin: 5% auto 10% 10%;
+  /* margin: 5% auto 10% 10%; */
 
  width: 100%;
  height: auto;
@@ -1117,8 +1136,9 @@ img.visit-image {
     height: auto;
     position: relative;
     top: 0;
-    left: 50%;
-    margin-left: -50%;
+    /* left: 50%; */
+    margin: auto;
+    /* margin-left: -55%; */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
