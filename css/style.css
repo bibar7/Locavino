@@ -31,9 +31,6 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  /* position: relative; */
-
-  /* background-attachment: scroll, scroll, scroll, fixed; */
     font-size: 16px;
   line-height: 1.6;
   color: #b8b8b8;
@@ -73,6 +70,7 @@ h5, h6, .h5, .h6 {
 }
 
 .contain {
+  display: flex;
   width: 100%;
   padding-right: 5% !important;
   padding-left: 5% !important;
@@ -112,6 +110,19 @@ text-shadow: 2px 2px 1px black;
 
 .text-primary {
   color: #421c19 !important;
+}
+
+.navbar{
+  position:relative;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -ms-flex-align:center;
+  align-items:center;
+  -ms-flex-pack:justify;
+  justify-content: space-between;
+  padding: 0;
 }
 
 a.navbar-brand img {
@@ -265,6 +276,7 @@ text-shadow: #000000cc 1px 1px 0px !important;
 
 .site-navbar-light.scrolled.awake {
   margin-top: 0px;
+  padding: 0;
   -webkit-transition: .3s all ease-out;
   -o-transition: .3s all ease-out;
   transition: .3s all ease-out;
@@ -593,14 +605,37 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   text-shadow: 1px 1px 1px #fff;
 
 }
-
 .img-frame {
-  overflow: hidden;
+  display: flex;
+overflow: hidden;
+position: relative;
 }
 
-.img-align {
-  text-align: center;
-  vertical-align: middle;
+.img-frame img {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+ width: 100%;
+ height: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+.img-frame {
+float: left;
+width: 850px; 
+height: 445px;
+}
+
+.img-frame img {
+  width: 340px; 
+height: 390px;
+margin: 0;
+position: absolute;
+
+}
 }
 
 button.navbar-toggler:focus {
