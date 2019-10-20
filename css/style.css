@@ -111,7 +111,7 @@ text-shadow: 2px 2px 1px black;
 }
 
 .text-primary {
-  color: #421C19 !important;
+  color: #421c19 !important;
 }
 
 a.navbar-brand img {
@@ -260,7 +260,7 @@ text-shadow: #000000cc 1px 1px 0px !important;
 }
 
 .site-navbar-light.scrolled .nav-link.active {
-  color: #00ACB8 !important;
+  color: #ffffff !important;
 }
 
 .site-navbar-light.scrolled.awake {
@@ -592,6 +592,15 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   color: #231F20;
   text-shadow: 1px 1px 1px #fff;
 
+}
+
+.img-frame {
+  overflow: hidden;
+}
+
+.img-align {
+  text-align: center;
+  vertical-align: middle;
 }
 
 button.navbar-toggler:focus {
@@ -1053,50 +1062,23 @@ color: white;
   opacity: 1;
 }
 
-#map {
+
+
+#locavino-map {
+  width: 100%; 
   height: 400px;
-  width: 100%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
-  #map {
+  #locavino-map {
     height: 300px;
   }
 }
 
-#reservationModal .close {
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  cursor: pointer;
-}
 
-#reservationModal .close:active, #reservationModal .close:focus {
-  outline: none !important;
-}
 
-#reservationModal .close span {
-  font-size: 30px;
-}
 
-#reservationModal .close small {
-  font-size: 16px;
-  position: relative;
-  top: -2px;
-  right: 10px;
-}
-
-#reservationModal .modal-content {
-  border-radius: 0;
-}
-
-#reservationModal .modal-content label {
-  color: #000;
-}
-
-#reservationModal .modal-content .modal-body {
-  padding: 0;
-}
 
 div.bg-image, .site-cover {
   min-height: 200px;
