@@ -36,6 +36,14 @@ body {
   color: #b8b8b8;
 }
 
+html, body, .centered-wrapper {
+  height:100%;
+width: 100%;
+margin: 0;
+padding: 0;
+border: 0;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -71,11 +79,18 @@ h5, h6, .h5, .h6 {
 
 .contain {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
   width: 100%;
-  padding-right: 5% !important;
-  padding-left: 5% !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
+  height: auto;
 }
 
 /* 
@@ -529,10 +544,20 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px){
+  .btn {
+    max-height: 150px;
+  }
+
+  #section-about div.btn p {
+    margin: 0 auto !important;
+  }
+}
+
 .btn.btn-lg {
   font-family: 'TheNational-Bold';
   font-size: 25px !important;
-  padding: 13px 40px !important;
+  padding: 13px 30px !important;
 }
 
 .btn.btn-sm {
@@ -605,10 +630,16 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   text-shadow: 1px 1px 1px #fff;
 
 }
+
+/* div.img {
+  padding: 0 !important;
+} */
+
 .img-frame {
   display: flex;
 overflow: hidden;
 position: relative;
+
 }
 
 .img-frame img {
@@ -616,26 +647,61 @@ position: relative;
   left: 0;
   top: 0;
   bottom: 0;
-  margin: auto auto;
- width: 100%;
+  /* margin: auto auto; */
+ width: 90%;
  height: auto;
+
 }
 
+.img-frame-1 img {
+  margin-top: 15%;
+}
+
+@media screen and (min-width: 1049px){
+
+.img-frame-1 img {
+  margin-top: 11%;
+}
+
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
 .img-frame {
-float: left;
-width: 850px; 
-height: 445px;
+width: 850px !important; 
+height: 480px;
 }
 
-.img-frame img {
-  width: 340px; 
-height: 390px;
-margin: 0;
-position: absolute;
+.img-frame-2 {
+  float: left;
 
 }
+
+.img-frame-1 img {
+  margin-top: 50%;
+  width: 320px !important; 
+  height: 350px;
+  position: absolute;
+
+}
+.img-frame-2 img {
+  margin-top: 10%;
+  width: 360px !important; 
+  height: 390px;
+  position: absolute;
+
+}
+
+}
+
+@media screen and (max-width: 768px){
+  .img-frame-2 img {
+width: 100%;
+height: auto;
+  }
+}
+
+#section-contact div.mb-5 {
+  margin-bottom: 1.5em !important;
 }
 
 button.navbar-toggler:focus {
@@ -665,6 +731,8 @@ div.center-btn {
   text-align:center;
   margin-top: 5%;
 }
+
+
 
 .site-vh-100 {
   height: 100vh;
@@ -763,7 +831,7 @@ section, footer {
   text-transform: uppercase; 
   font-size: 56px;
   font-weight: 900;
-  margin-top: -15px;
+  margin-top: -12px;
   margin-bottom: 30px;
 }
 
@@ -771,6 +839,10 @@ h2.no-subtitle {
   margin-bottom: 15px !important;
 }
 
+div.about-text {
+  margin-top: 15px;
+
+}
 p.lead {
   font-family: 'Playlist-Script', cursive; 
 font-size: 28px;
@@ -797,9 +869,23 @@ div.menu-btn {
   margin-top: 3%;
 }
 
+
+
+@media screen and (min-width: 595px){
+  .no-padding {
+    padding: 0 !important;
+  }
+}
+
 #section-about p {
 margin-right: 2em;
+margin-top: 1.75em;
+font-size: 1.15rem;
+color: white; 
+text-shadow: 1px 1px 1px #000000;
 }
+
+
 
 .column-center {
   display: flex;
@@ -807,25 +893,27 @@ margin-right: 2em;
     flex-wrap: wrap;
 }
 
+.centered-wrapper div.col-md-6 {
+  vertical-align: middle;
+   text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   #section-about p {
     max-width: 100%;
+  }
+  #section-about p.text {
 
+    text-align: justify !important;
+margin-right: 0.5em !important;
   }
 
-  #section-about p {
-
-  }
 
   #section-about img {
     margin-top: 30px;
-  }
-
-  #section-about img {
-    max-width: 100%;
     height: auto;
     position: relative;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     padding-top: 7% !important;
   }
 }
@@ -1168,6 +1256,7 @@ img.visit-image {
   }
 }
 
+
 .image-popup {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
@@ -1318,3 +1407,18 @@ img.visit-image {
     stroke-dashoffset: -136px;
   }
 }
+
+
+/* Common Subpage Styles */
+
+.subpage-header {
+  height: 80vh;
+  }
+
+  @media screen and (max-width: 960px) {
+    .subpage-header {
+      height: inherit;
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+  }
