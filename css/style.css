@@ -362,10 +362,7 @@ h1.main-title {
   text-shadow: #000000 0.5px 0.5px 0px;
 }
 
-.view-menu-btn {
-  margin-top: 5vh;
-  padding: 0 !important;
-}
+
 
 @media screen and (max-width: 450px) {
   h5.welcome {
@@ -554,11 +551,18 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   }
 }
 
+.btn.btn-lg-h {
+  font-family: 'TheNational-Bold';
+  font-size: 23px !important;
+  padding: 5px 20px !important;
+}
+
 .btn.btn-lg {
   font-family: 'TheNational-Bold';
   font-size: 25px !important;
   padding: 13px 30px !important;
 }
+
 
 .btn.btn-sm {
   font-family: 'TheNational-Bold';
@@ -568,6 +572,7 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
 
 .btn.btn-primary {
   border-radius: 0px;
+
 }
 
 .btn.btn-secondary {
@@ -590,6 +595,12 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
 
 }
 
+
+.btn-top {
+  margin-top: 4%;
+}
+
+
 .btn:before {
   display: none;
 }
@@ -601,10 +612,12 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
 }
 
 .btn.btn-primary {
-  background: #421C19;
-  border-color: #421C19;
+  background: #00ACB8;
+  border-color: #00ACB8;
   color: #fff;
   text-shadow: 1px 1px 1px #000000;
+  border: 2px solid #FFF !important;
+
 
 }
 
@@ -628,7 +641,13 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   border-color: #fff;
   color: #231F20;
   text-shadow: 1px 1px 1px #fff;
+}
 
+.btn.view-menu-btn:hover, .btn.view-menu-btn:focus, .btn.view-menu-btn:active {
+  background: #5d1d19 !important;
+  border-color: #fff;
+  color: #231F20;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 /* div.img {

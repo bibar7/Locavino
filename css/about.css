@@ -1,0 +1,35 @@
+#about-header {
+    background: transparent;
+}
+    
+#bg-video{
+    background: transparent!important;
+    overflow: hidden;
+}
+
+#video-banner {
+background-image: url("/images/floor.jpg")
+position: absolute;
+width: 100% !important!;
+height: 120vh;
+
+;
+z-index: -1;
+}
+
+.overlay {
+    position:absolute;
+    height: 95vh;
+    /* width: 80%;
+    height: auto; */
+
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.vid-overlay {
+    margin-left: 33% !important;
+    margin-right: auto;
+}
+
