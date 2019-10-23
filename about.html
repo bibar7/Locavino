@@ -75,8 +75,19 @@ content="The official home website for Locavino, a locally sourced wine bar in d
     <!-- Leaflet Map API JS -->
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 
-  </head>
+    <!-- JQuery -->
 
+    <script src="js/jquery.min.js"></script>
+
+<!-- AMP Video Script -->
+<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<link rel="canonical" href="https://amp.dev/documentation/examples/multimedia-animations/click-to-play_overlay_for_amp-video/index.html">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+  </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     
     <nav class="navbar navbar-expand-lg site_navbar site-navbar-light" id="site-navbar">
@@ -102,39 +113,108 @@ content="The official home website for Locavino, a locally sourced wine bar in d
       </div>
     </nav>
     <!-- END nav -->
-    <section id="about-header"> 
-    <div itemscope itemtype="http://schema.org/BarOrPub">  
-      <meta itemprop="video" content="video/locavino-video.mov">
-      <div id="bg-video container">
-        <video controls autoplay loop poster="images/floor.jpg" id="video-banner">
-            <source src="video/locavino-introduction.webmhd.webm" type="video/webm">
-            <source src="video/locavino-introduction.mp4" type="video/mp4">
-              <!-- <source src="video/locavino-introduction.mp4" type="video/mov"> -->
-                <!-- <source src="video/locavino-introduction.mp4" type="video/ogv"> -->
-                  Your browser does not support the video tag.
-                </video>
+    
+    <section id="about-video-header">
+  
+  
+            <div class="video-player">
+  
+          <video id="video-banner" controls autoplay="autoplay" loop width="1280" height="720" layout="responsive" src="video/locavino-introduction-1920.mp4">
+    </video>
+  
+    <div id="locavino-video-overlay" class="click-to-play-overlay contain">
 
-                <div class="row align-items-center justify-content-center text-center overlay">
-<div class="col-md-3"></div>
-<div clss="col-md-6">
-  <div class="vid-overlay">
-            <h5 class="welcome" style="margin-top: 20px;">Welcome to</h5>
-            <h1 class="site-heading site-animate mb-3 main-title" itemprop="name">LOCAVINO</h1>
-            <h2 class="site-subheading">Your new favorite neighborhood wine café!</h2>    
-                <p><a href="#section-menu" class="btn btn-outline-white btn-lg site-animate">View Menu</a></p>
-  </div>
-              </div>
- <div class="col-md-3"></div>
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-12">
+                <div class="row align-items-center justify-content-center text-center">
+                    <div class="col-md-12">
 
+        <h5 class="welcome">About</h5>
+        <h1 class="site-heading site-animate mb-3 main-title">LOCAVINO</h1>
             </div>
-              </div>
+          </div>
+  <div class="row align-items-center justify-content-center text-center">
+      <div class="col-md-12">
+      <div id="play-icon" role="button" class="icon-on" tabindex="0" on="tap:myOverlay.hide, myVideo.play"></div>
+      <div id="pause-icon" role="button" class="icon-off" tabindex="0" on="tap:myOverlay.hide, myVideo.play"></div>
 
-        </div>
-    </section>
+
+      <script>
+
+
+$('#video-banner').parent().click(function () {
+	if($(this).children('#video-banner').get(0).paused){        
+		$(this).children('#video-banner').get(0).play();   
+		$(this).children('#locavino-video-overlay').fadeOut();
+    		}
+	else{       
+		$(this).children('#video-banner').get(0).pause();
+  	$(this).children('#locavino-video-overlay').fadeIn();
+    }
+});
+
+$('#video-banner').on('play', function(e) { 
+$('#pause-icon').removeClass('icon-off').addClass('icon-on');
+$('#play-icon').removeClass('icon-on').addClass('icon-off');
+});
+
+$('#video-banner').on('pause', function(e) { 
+$('#pause-icon').removeClass('icon-on').addClass('icon-off');
+$('#play-icon').removeClass('icon-off').addClass('icon-on');
+});
+
+
+</script>
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+
+  <div class="bg-image mobile-bg">
+      <div class="container">
+          <div class="row align-items-center justify-content-center text-center site-vh-100">
+            <div class="col-md-12">
+              <h5 class="welcome" style="margin-top: 20px;">Welcome to</h5>
+              <h1 class="site-heading site-animate mb-3 main-title" itemprop="name">LOCAVINO</h1>
+              <h2 class="site-subheading">Your new favorite neighborhood wine café!</h2>  
+              <p class="btn-top"><a href="about.html" class="btn btn-outline-white btn-lg-h site-animate">Our Story</a></p>
+    
+                  <p><a href="#section-menu" class="btn btn-outline-white view-menu-btn btn-lg-h site-animate">View Menu</a></p>
+              </div>
+                </div>
+          </div>
+  </div>
+
+  </section>
+
+
     <!-- END section -->
 
-    <section class="site-section" id="section-about">
-        <div itemscope itemtype="http://schema.org/Winery">
+    <section class="site-section" id="mobile-video">
+        <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+              <div class="video-frame">
+                <video id="video-banner" controls autoplay="autoplay" loop width="1280" height="720" layout="responsive" src="video/locavino-introduction-1280.mp4">
+                </video>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+   <!-- END section -->
+
+
+    <section class="site-section bg-light" id="about-subpage-main">
+                    <div itemscope itemtype="http://schema.org/Winery">
 
       <div class="container">
 
@@ -158,199 +238,16 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
         <div class="row">
 
-            <div class="col-md-6 btn">
+            <div class="col-md-12 btn btn-top">
             <p><a href="suppliers.html" class="btn btn-secondary btn-lg" style="font-size: 40px;">Learn About Our Suppliers</a></p>
             </div>
 
-            <div class="col-md-6 btn">
-              <p><a href="about.html" class="btn btn-secondary btn-lg" style="font-size: 40px;">Learn More About Us</a></p>
-            </div>
-
         </div>
 
         </div>
       </div>
 
     </section>
-    <!-- END section -->
-    
-
-    <section class="site-section bg-light" id="section-menu">
-      <div class="container">
-            <div itemprop="hasMenu" itemscope itemtype="http://schema.org/Restaurant">
-
-        <div class="row">
-          <div class="col-md-12 text-center mb-5 site-animate">
-            <h4 class="site-sub-title" itemprop="name">LOCAVINO's</h4>
-            <h2 class="display-4 site-primary-title">Food Menu</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <!-- <div class="owl-carousel site-owl"> -->
-
-              <div class="item">
-                <div class="media d-block mb-4 text-center site-media site-animate border-0 fadeInUp site-animated">
-                  <img itemprop="image" src="images/menu-1.png" alt="first page of food menu including appetizers, sandwiches, wraps, and salads" class="img-fluid">
-                </div>                  
-              </div>
-            </div>
-            <div class="col-md-6">
-
-              <div class="item">
-                <div class="media d-block mb-4 text-center site-media site-animate border-0 fadeInUp site-animated">
-                  <img src="images/menu-2.png" alt="second page of food menu including pasta, flatbreads (pizza), burgers, and dessert" class="img-fluid">
-                
-                </div>
-              </div>
-            </div>
-              
-                  </div>
-                  <div class="row">
-                          <div class="col-md-12 btn">
-                            <p><a href="menu.pdf" target="_blank" class="btn btn-outline-white btn-lg" style="font-size: 40px;">Download Menu</a></p>
-                          </div>
-                        
-              </div>
-
-            </div>
-         
-    </section>
-   
-    <section class="site-section" id="section-gallery">
-      <div class="container">
-        <div class="row site-custom-gutters">
-
-          <div class="col-md-12 text-center mb-5 site-animate fadeInUp site-animated">
-              <h4 class="site-sub-title">Photo</h4>
-              <h2 class="display-4 site-primary-title">Gallery</h2>            
-          </div>
-
-          <div class="col-md-4 site-animate fadeInUp site-animated>
-            <div class="col-md-4 ">
-            <a href="images/artisans-and-vines.jpg" class="site-thumbnail image-popup">
-              <img src="images/artisans-and-vines.jpg" alt="Free Template by colorlib.com" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 site-animate fadeInUp site-animated">
-            <a href="images/menu-item-1.jpg" class="site-thumbnail image-popup">
-              <img src="images/menu-item-1.jpg" alt="Free Template by colorlib.com" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 site-animate fadeInUp site-animated">
-            <a href="images/menu-item-4.jpg" class="site-thumbnail image-popup">
-              <img src="images/menu-item-4.jpg" alt="Free Template by colorlib.com" class="img-fluid">
-            </a>
-          </div>
-
-          <div class="col-md-4 site-animate fadeInUp site-animated">
-            <a href="images/menu-item-3.jpg" class="site-thumbnail image-popup">
-              <img src="images/menu-item-3.jpg" alt="Free Template by colorlib.com" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 site-animate fadeInUp site-animated">
-            <a href="images/flo.jpg" class="site-thumbnail image-popup">
-              <img src="images/flo.jpg" alt="Free Template by colorlib.com" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 site-animate fadeInUp site-animated">
-            <a href="images/menu-item-5.jpg" class="site-thumbnail image-popup">
-              <img src="images/menu-item-5.jpg" alt="Free Template by colorlib.com" class="img-fluid">
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    <section class="site-section bg-light" id="section-contact">
-        <div  itemscope itemtype="http://schema.org/LocalBusiness">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="display-4 site-primary-title no-subtitle">Visit Us</h2>
-            <div class="row justify-content-center">
-              <div class="col-md-7">
-                <p class="lead">Questions? Concerns? Send us a message!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-       
-          <div class="col-md-6 site-animate img-container">
-            <div class="img-frame">
-              <img src="images/bubbly.jpg" atl="four sparkling wine bottles of Jansz, De Pró, Novecento, and Faire la Fête behind coasters monogrammed with Locavino logo">
-          </div>
-        </div>
-
-          <div class="col-md-6 site-animate">
-<div class="align-items-center justify-content-center text-center">
-            <p style="color: white;">
-              <h5 class="contact-info">Address:</h5> <div itemprop="address"><span itemprop="streetAddress">8519 Fenton Street </span><br> <span itemprop="addressLocality">Silver Spring</span>, 
-                <span itemprop="addressRegion">MD</span> <span itemprop="postalCode">20910</span></div>
-              <h5 class="contact-info">Phone:</h5><a class="contact-accent" href="tel:301-448-1819" itemprop="telephone">(301) 448-1819</a>
-              <h5 class="contact-info">Email:</h5><a class="contact-accent" href="mailto:cheers@locavino.com" itemprop="email">cheers@locavino.com</a><br>
-              <h5 class="contact-info">Hours: </h5>
-              <div itemscope itemtype="http://schema.org/OpeningHoursSpecification">
-                <time itemprop="openingHours" datetime=“Mo-Th 11:00-22:00”><span itemprop="dayOfWeek">Mondays-Thursdays</span> <span itemprop="opens">11:00 AM</span> - <span itemprop="closes">10:00 PM</span></time>; <br>
-              <time itemprop="openingHours" datetime=“Fr-Sa 11:00-23:00”><span itemprop="dayOfWeek">Fridays-Saturdays</span> <span itemprop="opens">11:00 AM</span>  - <span itemprop="closes">11:00 PM</span></time>; <br>
-              <time itemprop="openingHours" datetime=“Su 11:00-21:00”><span itemprop="dayOfWeek">Sundays</span> <span itemprop="opens">11:00 AM</span> - <span itemprop="closes">9:00 PM</span></time>.
-              </div>
-            </p>
-            <p>
-              <ul class="site-footer-social list-unstyled ">
-                <li class="site-animate fadeInUp site-animated"><a href="https://www.facebook.com/locavino/" target="_blank"><span class="icon-facebook"></span></a></li>
-                <li class="site-animate fadeInUp site-animated"><a href="https://twitter.com/locavinodtss?lang=en" target="_blank"><span class="icon-twitter"></span></a></li>
-                <li class="site-animate fadeInUp site-animated"><a href="https://www.yelp.com/biz/locavino-silver-spring" target="_blank"><span class="icon-yelp"></span></a></li>
-              </ul>
-            </p>
-          </div>
-          </div>
-          
-        </div>
-        <div class="row">
-            <div class="col-md-1">
-
-            </div>
-
-          <div class="col-md-10 center-btn">
-            <p>
-                <div id="locavino-map"></div>
-
-                <!-- <img itemprop="image" src="images/bubbly.jpg" alt="four different bottles of sparkling wines (Jansz, De Pró, Novecento, and Faire la Fête) pictured behind white coasters decorated with the Locavino logo in black" class="img-fluid"> -->
-            </p>
-        </div>
-        <div class="col-md-1"></div>
-
-        </div>
-
-      </div>
-    </div>
-    </div>
-  </div>
-
-    </section>
-    </div>
-    <script>
-    
-      var mymap = L.map('locavino-map').setView([38.997, -77.025], 16);
-    
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGFuY2VvZmZsYW1lIiwiYSI6ImNrMTVjcnIwNTA0dDEzY3Fwd3Z0MmpuM2YifQ.Nv4syxWiFzUBAbrwo8BH6Q', {
-        maxZoom: 18,
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        id: 'mapbox.streets'
-      }).addTo(mymap);
-
-      L.marker([38.997, -77.025]).addTo(mymap);
-
-    
-    </script>    
     <!-- END section -->
     
 
@@ -398,91 +295,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       </div>
     </footer>
 
-    <!-- Modal
-    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="bg-image" style="background-image: url(images/beer.jpg);"></div>
-              </div>
-              <div class="col-lg-12 p-5">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
-                </button>
-                <h1 class="mb-4">Reserve A Table</h1>  
-                <form action="mailto:cheers@locavino.com" method="post">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="m_fname">First Name</label>
-                      <input type="text" class="form-control" id="m_fname">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <label for="m_lname">Last Name</label>
-                      <input type="text" class="form-control" id="m_lname">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="m_email">Email</label>
-                      <input type="email" class="form-control" id="m_email">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="m_people">How Many People</label>
-                      <select name="" id="m_people" class="form-control">
-                        <option value="1">1 People</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4+">4+ People</option>
-                      </select>
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <label for="m_phone">Phone</label>
-                      <input type="text" class="form-control" id="m_phone">
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="m_date">Date</label>
-                      <input type="text" class="form-control" id="m_date">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <label for="m_time">Time</label>
-                      <input type="text" class="form-control" id="m_time">
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <label for="m_message">Message</label>
-                      <textarea class="form-control" id="m_message" cols="30" rows="7"></textarea>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Reserve Now">
-                    </div>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- END Modal -->
+  
 
 
-
-    <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
