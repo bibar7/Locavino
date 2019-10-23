@@ -505,7 +505,7 @@ width: 100% !important;
   color: #000 !important;
 }
 
-section.bg-light {
+.bg-light {
 background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
