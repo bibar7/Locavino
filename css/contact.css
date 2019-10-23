@@ -1,6 +1,10 @@
-/* .form-submit-btn {
-    background: #00ACB8 !important;
-    border: 2px solid #FFF !important;
-} */
+.contact-title {
+    font-family: 'Playlist-Script', cursive; 
+font-size: 3.2rem;
+color: #00acb8;
+font-weight: 100;
+letter-spacing: .05em;
+color: #00ACB8;
+text-shadow: #850900dd 4px 3px 0px;
 
-
+}
