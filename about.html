@@ -79,13 +79,6 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
     <script src="js/jquery.min.js"></script>
 
-<!-- AMP Video Script -->
-<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-<link rel="canonical" href="https://amp.dev/documentation/examples/multimedia-animations/click-to-play_overlay_for_amp-video/index.html">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
 
   </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
@@ -117,10 +110,15 @@ content="The official home website for Locavino, a locally sourced wine bar in d
     <section id="about-video-header">
   
   
-            <div class="video-player">
+            <div class="video-player contain">
+                <div class="row align-items-center justify-content-center text-center">
+                    <div class="col-md-12">
   
-          <video id="video-banner" controls autoplay="autoplay" loop width="1280" height="720" layout="responsive" src="video/locavino-introduction-1920.mp4">
-    </video>
+          <video id="video-banner" autoplay="autoplay" width="1280" height="720" loop> 
+            <source src="video/locavino-introduction-1920.mp4">
+            <source src="locavino-introduction.webm">
+            <source src="locavino-introduction.ogv">
+          </video>
   
     <div id="locavino-video-overlay" class="click-to-play-overlay contain">
 
@@ -141,27 +139,33 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
       <script>
 
-
-$('#video-banner').parent().click(function () {
-	if($(this).children('#video-banner').get(0).paused){        
-		$(this).children('#video-banner').get(0).play();   
-		$(this).children('#locavino-video-overlay').fadeOut();
-    		}
-	else{       
-		$(this).children('#video-banner').get(0).pause();
-  	$(this).children('#locavino-video-overlay').fadeIn();
-    }
+$('#video-banner').parent().click(function(){
+  if($('#play-icon').hasClass('icon-on')){
+  $(this).children('#video-banner').get(0).play();
+  $(this).children('#locavino-video-overlay').fadeOut();
+  return false;
+  }
+return true;
 });
 
-$('#video-banner').on('play', function(e) { 
+$('#video-banner').on('play', function() { 
 $('#pause-icon').removeClass('icon-off').addClass('icon-on');
-$('#play-icon').removeClass('icon-on').addClass('icon-off');
-});
+ $('#play-icon').removeClass('icon-on').addClass('icon-off');
+ });
 
-$('#video-banner').on('pause', function(e) { 
-$('#pause-icon').removeClass('icon-on').addClass('icon-off');
-$('#play-icon').removeClass('icon-off').addClass('icon-on');
-});
+ $('#video-banner').parent().click(function(){
+  if($('#pause-icon').hasClass('icon-on')){
+    $(this).children('#video-banner').get(0).pause();
+    $(this).children('#locavino-video-overlay').fadeIn();
+    return true;
+  }
+  return false;
+ });
+
+ $('#video-banner').on('pause', function() { 
+  $('#pause-icon').removeClass('icon-on').addClass('icon-off');
+      $('#play-icon').removeClass('icon-off').addClass('icon-on');
+ });
 
 
 </script>
@@ -169,6 +173,8 @@ $('#play-icon').removeClass('icon-off').addClass('icon-on');
 
     </div>
   </div>
+</div>
+</div>
 </div>
 </div>
 
@@ -198,16 +204,24 @@ $('#play-icon').removeClass('icon-off').addClass('icon-on');
     <section class="site-section" id="mobile-video">
         <div class="container">
 
-        <div class="row">
-            <div class="col-md-12">
-              <div class="video-frame">
-                <video id="video-banner" controls loop width="1280" height="720" layout="responsive" src="video/locavino-introduction-1280.mp4">
-                </video>
-              </div>
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-12 no-padding site-animate img fadeInRight site-animated" data-animate-effect="fadeInRight">
+                    <div class="contain">
+                      <div class="row image align-items-center justify-content-center text-center">
+                        <div class="video-frame">
+                            <video id="video-banner" controls> 
+                                <source src="video/locavino-introduction-1920.mp4">
+                                <source src="locavino-introduction.webm">
+                                <source src="locavino-introduction.ogv">
+                            </video>                      
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
 
-              </div>
-            </div>
           </div>
+        
         </section>
 
    <!-- END section -->
@@ -310,6 +324,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
 
   
+<!-- loader -->
+<div id="site-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#571B17"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#00acb8"/></svg></div>
+
 
 
     <script src="js/popper.min.js"></script>
