@@ -176,15 +176,3 @@ width: 100% !important;
     }
   }
 
-  #about-subpage-main p.introduction {
-    color: white; 
-    text-shadow: 1px 1px 1px #000000;
-  }
-
-  #about-subpage-main p.introduction a {
-    color: #00ACB8;
-    text-transform: uppercase;
-    text-shadow: #850900 1px 1px 0px, #ffffffdd 1.3px 1.3px 0px; 
-
-
-  }

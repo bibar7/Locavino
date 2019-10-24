@@ -474,6 +474,35 @@ width: 100% !important;
   font-size: 30px;
 }
 
+p.introduction {
+  color: white; 
+  text-shadow: 1px 1px 1px #000000;
+}
+
+p.introduction a {
+  color: #00ACB8;
+  text-transform: uppercase;
+  text-shadow: #850900 1px 1px 0px, #ffffffdd 1.3px 1.3px 0px; 
+
+
+}
+
+#about-subpage-main p.introduction {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 992px){
+  #about-subpage-main p.introduction {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #about-subpage-main div.col-md-12{
+    margin-bottom: 0.5em !important;
+  }
+
+}
 .menu-item {
   margin-bottom: 30px;
 }
@@ -649,10 +678,9 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   text-shadow: 1px 1px 1px #fff;
 }
 
-/* div.img {
-  padding: 0 !important;
-} */
-
+.about-section-img{
+max-width: 480px;
+}
 .img-frame {
   display: flex;
 overflow: hidden;
@@ -683,7 +711,11 @@ position: relative;
 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
+ .about-section-img {
+   margin-top: 10%;
+   min-width: 380px;
+   height: auto;
+}
 .img-frame {
 width: 850px !important; 
 height: 480px;
@@ -712,6 +744,15 @@ height: 480px;
 }
 
 @media screen and (max-width: 768px){
+  .about-section-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+ }
+ .intro-img {
+    margin-top: 0.5em !important;
+  }
   .img-frame-2 img, .img-frame-1 img {
 width: 100%;
 height: auto;
@@ -852,6 +893,7 @@ section, footer {
   margin-top: -12px;
   margin-bottom: 30px;
 }
+
 
 h2.no-subtitle {  
   margin-bottom: 15px !important;
