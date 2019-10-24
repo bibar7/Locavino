@@ -114,13 +114,20 @@ h3.contact-info {
 }
 h5.contact-info {
   font-family: 'TheNational-Bold';
-font-size: 20px;
+font-size: 1.6rem;
 color: white;
 margin-top: 2px;
 letter-spacing: 0.05em;
 text-shadow: 2px 2px 1px black;
 
 }
+
+.business-info
+{
+  font-size: 1.2rem;
+}
+
+
 
 .text-primary {
   color: #421c19 !important;
@@ -680,6 +687,7 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
 
 .about-section-img{
 max-width: 480px;
+margin-top: 5% !important;
 }
 .img-frame {
   display: flex;
@@ -699,9 +707,6 @@ position: relative;
 
 }
 
-.img-frame-1 img {
-  margin-top: 15%;
-}
 
 @media screen and (min-width: 1049px){
 
@@ -769,6 +774,7 @@ button.navbar-toggler:focus {
 
 a.contact-accent {
   color: #C5802A !important;
+  font-size: 1.25rem;
 }
 
 .form-control {
