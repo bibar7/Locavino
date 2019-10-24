@@ -8,3 +8,27 @@ color: #00ACB8;
 text-shadow: #850900dd 4px 3px 0px;
 
 }
+
+.social-icons {
+    list-style: none;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+
+.social-contain{
+    margin-top: 30px;
+}
+/* .social-contain {
+    display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30%;
+  
+  }
+
+  .social-contain img {
+      width: 100%;
+      height: auto;
+      float: left;
+
+  } */
