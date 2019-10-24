@@ -114,7 +114,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
                     <div id="header-video-player">
   
-          <video id="video-banner" autoplay="autoplay" width="1280" height="720" loop> 
+          <video id="video-banner" width="1280" height="720" loop> 
             <source src="video/locavino-introduction-1920.mp4">
             <source src="locavino-introduction.webm">
             <source src="locavino-introduction.ogv">
@@ -137,73 +137,6 @@ content="The official home website for Locavino, a locally sourced wine bar in d
       <div id="pause-icon" role="button" class="icon-off"></div>
 
 
-      <script>
-
-$('#video-banner').on('play', function(e) { 
-  $('#play-icon').removeClass('icon-on').addClass('icon-off');
-$('#pause-icon').removeClass('icon-off').addClass('icon-on');
-});
-
-$('#video-banner').on('pause', function(e) { 
-$('#pause-icon').removeClass('icon-on').addClass('icon-off');
-$('#play-icon').removeClass('icon-off').addClass('icon-on');
-});
-
-$('#video-banner').parent().click(function (e) {
-	if($(this).children('#video-banner').get(0).paused){        
-		$(this).children('#video-banner').get(0).play();   
-    $(this).children('#locavino-video-overlay').fadeOut();
-
-    		}
-	else{       
-		$(this).children('#video-banner').get(0).pause();
-    $(this).children('#locavino-video-overlay').fadeIn();
-
-    }
-});
-
-$('#video-banner').parent().mousemove(function (e) {
-    $('#locavino-video-overlay').show();
-});
-
-$('#video-banner').parent().mouseout(function (e) {
-  $('#locavino-video-overlay').hide();
-});
-
-
-
-
-// $('#video-banner').on('play', function() { 
-//   $('#play-icon').removeClass('icon-on').addClass('icon-off');
-//   $('#pause-icon').removeClass('icon-off').addClass('icon-on');
-
-//  });
-
- 
-
-// $('#video-banner').parent().click(function(){
-//   if($('#play-icon').hasClass('icon-on')){
-//   $(this).children('#video-banner').get(0).play();
-//   $(this).children('#locavino-video-overlay').fadeOut();
-//   }
-//   else {  
-//     $(this).children('#video-banner').get(0).pause();
-//     $(this).children('#locavino-video-overlay').fadeIn();
-//     }
-// });
-
-// $('#video-banner').on('pause', function() { 
-//   $('#pause-icon').removeClass('icon-on').addClass('icon-off');
-//   $('#play-icon').removeClass('icon-off').addClass('icon-on');
-
-//  });
-
- 
-
-
-</script>
-
-
     </div>
   </div>
 </div>
@@ -220,9 +153,7 @@ $('#video-banner').parent().mouseout(function (e) {
             <div class="col-md-12">
               <h5 class="welcome" style="margin-top: 20px;">Welcome to</h5>
               <h1 class="site-heading site-animate mb-3 main-title" itemprop="name">LOCAVINO</h1>
-              <h2 class="site-subheading">Your new favorite neighborhood wine café!</h2>  
-              <p class="btn-top"><a href="about.html" class="btn btn-outline-white btn-lg-h site-animate">Our Story</a></p>
-    
+              <h2 class="site-subheading">Your new favorite neighborhood wine café!</h2>      
                   <p><a href="#section-menu" class="btn btn-outline-white view-menu-btn btn-lg-h site-animate">View Menu</a></p>
               </div>
                 </div>
@@ -236,10 +167,6 @@ $('#video-banner').parent().mouseout(function (e) {
 
     <section class="site-section" id="mobile-video">
         <div class="container">
-
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-md-12 no-padding site-animate img fadeInRight site-animated" data-animate-effect="fadeInRight">
-                    <div class="contain">
                       <div class="row image align-items-center justify-content-center text-center">
                         <div class="video-frame">
                             <video id="video-banner" controls> 
@@ -375,6 +302,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.animateNumber.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
 
     
   </body>
