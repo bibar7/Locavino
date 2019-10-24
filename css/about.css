@@ -160,11 +160,14 @@ width: 100% !important;
    
     #mobile-video {
         display: block;
-      position: relative;
-      overflow: hidden;
+  }
+
+  .video-frame {
+    position: relative;
+        overflow: hidden;
   }
     
-    #mobile-video video {
+  .video-frame video {
       top: 50%;
       left: 0;
   width: 100% !important;
