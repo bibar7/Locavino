@@ -481,9 +481,12 @@ width: 100% !important;
   font-size: 30px;
 }
 
+
+
 p.introduction {
   color: white; 
   text-shadow: 1px 1px 1px #000000;
+	margin: 15px 0 30px;
 }
 
 p.introduction a {
@@ -495,7 +498,7 @@ p.introduction a {
 }
 
 #about-section-main p.introduction {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 992px){
@@ -508,7 +511,6 @@ p.introduction a {
   #about-section-main div.col-md-12{
     margin-bottom: 0.5em !important;
   }
-
 }
 .menu-item {
   margin-bottom: 30px;
@@ -581,8 +583,8 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
     max-height: 150px;
   }
 
-  #section-about div.btn p {
-    margin: 0 auto !important;
+  #section-about .btn {
+    margin: auto auto !important;
   }
 }
 
@@ -685,10 +687,17 @@ background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center;
   text-shadow: 1px 1px 1px #fff;
 }
 
-.about-section-img{
+/* .about-section-img{
 max-width: 480px;
 margin-top: 5% !important;
+} */
+
+.about-section-img {
+  max-width: 480px;
+  height: auto;
+
 }
+
 .img-frame {
   display: flex;
 overflow: hidden;
@@ -716,8 +725,8 @@ position: relative;
 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
- .about-section-img {
-   margin-top: 10%;
+  .about-section-img {
+   margin-top: 15% !important;
    min-width: 380px;
    height: auto;
 }
@@ -752,7 +761,7 @@ height: 480px;
   .about-section-img {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 100% !important;
     height: auto;
  }
  .intro-img {
@@ -905,10 +914,7 @@ h2.no-subtitle {
   margin-bottom: 15px !important;
 }
 
-div.about-text {
-  margin-top: 15px;
 
-}
 p.lead {
   font-family: 'Playlist-Script', cursive; 
 font-size: 28px;
@@ -940,6 +946,12 @@ div.menu-btn {
 @media screen and (min-width: 595px){
   .no-padding {
     padding: 0 !important;
+  }
+
+  .no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
   }
 }
 

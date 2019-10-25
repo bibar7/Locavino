@@ -28,8 +28,14 @@ $('#video-banner').parent().mousemove(function (e) {
 });
 
 $('#video-banner').parent().mouseout(function (e) {
-  $('#locavino-video-overlay').hide();
+  if(!$(this).children('#video-banner').get(0).paused){
+    $('#locavino-video-overlay').hide();
+  }
+  else{
+  $('#locavino-video-overlay').show();
+  }
 });
+
 
 });
 

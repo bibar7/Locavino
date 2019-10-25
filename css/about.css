@@ -66,6 +66,8 @@ width: 100% !important;
   /* Overlay fills the parent and sits on top of the video */
   .click-to-play-overlay {
       position: absolute;
+      z-index: 2;
+
     top: 0;
     left: 0;
     right: 0;
@@ -163,8 +165,13 @@ width: 100% !important;
   }
 
   .video-frame {
+    background-image: url("../video/video-still.png");
+    background-repeat:no-repeat;
+    background-size: contain;
     position: relative;
-        overflow: hidden;
+    overflow: hidden;
+    z-index: 1;
+  
   }
     
   .video-frame video {
@@ -173,6 +180,18 @@ width: 100% !important;
   width: 100% !important;
   height: auto;
 
+z-index: 2;
     }
+  }
+
+  #about-subpage-main p.introduction {
+    line-height: 30px;
+      }
+
+
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    #about-subpage-main p.introduction {
+      line-height: 20px;
+        }
   }
 
