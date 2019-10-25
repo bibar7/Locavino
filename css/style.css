@@ -318,8 +318,18 @@ text-shadow: #000000cc 1px 1px 0px !important;
   letter-spacing: .1em;
 }
 
+
+header div.bg-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: #82604D;
+  background-image: url('../images/bg/focus.png');
+
+}
+
 .bg-image, .site-cover {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -528,7 +538,6 @@ p.introduction a {
 }
 
 .display-4 {
-  font-family: rig-shaded-bold-face;
   color: #00ACB8;
   text-shadow: #850900dd 4px 3px 0px;
 }
@@ -543,8 +552,8 @@ p.introduction a {
   color: #000 !important;
 }
 
-.bg-light {
-background: url("bg/seamless leather_000_441a1b.jpg") no-repeat center center; 
+.leather-section-bg {
+background: url("../images/bg/seamless leather_000_441a1b.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -884,8 +893,8 @@ div.center-btn {
   background: #421C19 !important;
 }
 
-section, footer {
-  background: url("bg/wood_0007_BA783E.jpg") no-repeat center center; 
+.hardwood-section-bg {
+  background: url("../images/bg/wood_0007_BA783E.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

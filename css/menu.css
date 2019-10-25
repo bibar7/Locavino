@@ -1,0 +1,123 @@
+body {
+    background-image: url('../images/bg/seamless leather_000_441a1b.jpg'); 
+    background-position: center center;
+    background-size: cover;
+}
+
+div.wrapper {
+    background-image: url('../images/bg/seamless paper_0014_15.jpg'); 
+    background-position: center center;
+    background-size: contain;
+    padding: 5%;
+}
+
+/* Food Menu Section */
+
+#locavino-food-menu {
+	padding: 100px 0 60px 0;
+}
+
+.menu-title {
+    letter-spacing: .05em;
+    font-size: 75px;
+    color: #00ACB8;
+    text-shadow: #850900dd 4px 3px 0px;
+    font-family: 'Playlist-Script', cursive; 
+    font-weight: 500;
+}
+
+.menu-subtitle {
+    letter-spacing: .2em;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; 
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+#locavino-food-menu img {
+	width: 300px;
+	box-shadow: 15px 0 #a7c44c;
+}
+.menu-section-subtitle {
+	padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#locavino-food-menu .menu-section hr {
+	margin: 0 auto;
+}
+#locavino-food-menu .menu-section {
+	margin: 0 20px 80px;
+}
+#locavino-food-menu .menu-section-title {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color: #444;
+	margin: 20px 0;
+	text-align: center;
+}
+#locavino-food-menu .menu-item {
+	margin: 45px 0;
+	font-size: 18px;
+}
+#locavino-food-menu .menu-item-name {
+	font-weight: 400;
+	font-size: 20px;
+    color: #571B17;
+    font-weight: 800;
+	margin-bottom: 10px;
+}
+#locavino-food-menu .menu-item-description {
+    font-size: 18px;
+    color: black;
+	width: 85%;
+}
+#locavino-food-menu .menu-item-price {
+	float: right;
+	font-weight: 400;
+	color: #555;
+	margin-top: -36px;
+}
+
+.menu-warning {
+    font-size: 15px; 
+}
+/* Styles for the gallery */
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.tz-gallery img {
+    border-radius: 2px;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
