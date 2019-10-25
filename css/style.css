@@ -362,6 +362,7 @@ h5.welcome {
   color: #00ACB8; 
   text-shadow: #000000 0.5px 0.5px 0px;
   letter-spacing: 0.2em;
+  padding-top: 10vh;
 }
 
 h1.main-title {
@@ -553,7 +554,7 @@ p.introduction a {
 }
 
 .leather-section-bg {
-background: url("../images/bg/seamless leather_000_441a1b.jpg") no-repeat center center; 
+background: #571B17 url("../images/bg/seamless leather_000_441a1b.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -894,7 +895,7 @@ div.center-btn {
 }
 
 .hardwood-section-bg {
-  background: url("../images/bg/wood_0007_BA783E.jpg") no-repeat center center; 
+  background: #C5802A url("../images/bg/wood_0007_BA783E.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1496,6 +1497,7 @@ img.visit-image {
 
 /* Common Subpage Styles */
 
+
 .subpage-header {
   height: 80vh;
   }
@@ -1507,3 +1509,37 @@ img.visit-image {
       padding-bottom: 3em;
     }
   }
+
+
+  /* Menu Images */
+
+  .menu-image-wrapper {
+  position: relative;
+  padding: 7px;
+  margin-bottom: 30px;
+  border: none;
+  
+  }
+  
+  .menu-image-wrapper a img  {
+  
+   width: 100% !important;
+   height: auto;
+  
+  }
+
+  /* a.menu-lightbox:hover{
+    cursor: zoom-in;
+    border: 3px #C5802A solid;
+  } */
+ 
+  a.menu-lightbox:hover{
+    cursor: zoom-in;
+    border: 3px #C5802A solid;
+  }
+  a.gallery-lightbox:hover{
+    cursor: zoom-in;
+    border: 3px #00acb8 solid;
+  }
+
+  

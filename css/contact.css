@@ -1,4 +1,11 @@
-.contact-title {
+#contact-header {
+
+    background: #00acb8 url("../images/bg/cards.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}.contact-title {
     font-family: 'Playlist-Script', cursive; 
 font-size: 3.2rem;
 color: #00acb8;
