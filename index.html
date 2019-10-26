@@ -76,22 +76,38 @@ content="The official home website for Locavino, a locally sourced wine bar in d
     
     <nav class="navbar navbar-expand-lg site_navbar site-navbar-light" id="site-navbar">
       <div class="container">
+
+          <div class="brand-left">
         <a class="navbar-brand" href="index.html">                
           <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
           <img src="images/logos/locavino-logo-min.png" alt="Locavino a wine café">
           </div>
         </a>
+      </div>
+
+        <div class="toggler-right">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
+      </div>
 
         <div class="collapse navbar-collapse" id="site-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#section-home" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#about-section-main" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#section-menu" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#section-gallery" class="nav-link">Gallery</a></li>
-            <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html#section-home" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+               <ul class="dropdown-menu">
+                    <li class="dropdown-btn"><a class="dropdown-item" href="index.html#about-section-main">Introducing Locavino</a></li>
+                    <li class="dropdown-btn"><a class="dropdown-item" href="about.html">Our Story</a></li>
+               </ul>
+          </li>
+          <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu">
+                 <li class="dropdown-btn"><a class="dropdown-item" href="index.html#section-menu">Our Food</a></li>
+                 <li class="dropdown-btn"><a class="dropdown-item" href="menu.html">Full Menu</a></li>
+            </ul>
+       </li>
+            <li class="nav-item"><a href="index.html#section-gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -107,9 +123,9 @@ content="The official home website for Locavino, a locally sourced wine bar in d
             <h5 class="welcome" style="margin-top: 20px;">Welcome to</h5>
             <h1 class="site-heading site-animate mb-3 main-title" itemprop="name">LOCAVINO</h1>
             <h2 class="site-subheading">Your new favorite neighborhood wine café!</h2>  
-            <p class="btn-top"><a href="about.html" class="btn btn-outline-white btn-lg-h site-animate">Our Story</a></p>
+            <p class="btn-top"><a href="index.html#section-contact" class="btn btn-outline-white btn-lg-h site-animate">Visit Us</a></p>
   
-                <p><a href="#section-menu" class="btn btn-outline-white view-menu-btn btn-lg-h site-animate">View Menu</a></p>
+                <p><a href="index.html#section-menu" class="btn btn-outline-white view-menu-btn btn-lg-h site-animate">View Menu</a></p>
               </div>
             </div>
               </div>
@@ -124,7 +140,8 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center mb-5 site-animate">
-            <h2 class="site-primary-title no-subtitle display-4">About Us</h2>
+            <h4 class="site-sub-title" itemprop="name">Introducing</h4>
+            <h2 class="display-4 site-primary-title">Locavino</h2>
           </div>
     </div>
     <div class="row">
@@ -199,7 +216,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
                           <div class="row">
                               <div class="col-md-12 btn">
-                                <p><a href="menu.html" class="btn btn-outline-white btn-lg" style="font-size: 40px;">View Full Menu</a></p>
+                                <p><a href="menu.html" class="btn btn-outline-white btn-lg" style="font-size: 40px;">View Drink Menu</a></p>
                               </div>
                             
                   </div>
@@ -301,7 +318,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
               <div class="col-md-7">
                 <p class="lead">Questions? Concerns? Send us a message!</p>
                 <div class="center-btn">
-                    <p><a href="contact.html" class="btn btn-outline-white btn-lg" style="font-size: 40px;">Contact</a></p>
+                    <p><a href="contact.html" class="btn btn-outline-white btn-lg" style="font-size: 40px;">Get In Touch</a></p>
                   </div>
               </div>
             </div>

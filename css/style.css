@@ -168,7 +168,7 @@ a.navbar-brand img {
   }
 }
 
-.site-navbar-light .navbar-nav > .nav-item > .nav-link {
+.site-navbar-light .navbar-nav > .nav-item > .nav-link, a.dropdown-item {
   font-size: 16px;
   font-family: "The National", sans-serif;
   color: #000000;
@@ -183,15 +183,36 @@ a.navbar-brand img {
   padding-right: 15px;
 }
 
-.site-navbar-light .navbar-nav > .nav-item > .nav-link:hover, .nav-link.active {
+.site-navbar-light .navbar-nav > .nav-item > .nav-link:hover, 
+a.dropdown-item:hover, 
+.nav-link.active {
 color: #ffffffc4 !important;
 text-shadow: #000000cc 1px 1px 0px !important;
 
 }
 
+.dropdown-menu {
+  background-color: #571B17;
+  
+}
+
+a.dropdown-item{
+
+}
+
+a.dropdown-item:hover {
+  background-color: #571B17;
+  
+}
+
+li.dropdwon-btn {
+  border: 1px solid black;
+
+}
+
 
 @media screen and (max-width: 960px) {
-  .site-navbar-light .navbar-nav > .nav-item > .nav-link {
+  .site-navbar-light .navbar-nav > .nav-item > .nav-link, .dropdown-item {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
@@ -231,6 +252,8 @@ text-shadow: #000000cc 1px 1px 0px !important;
     display: none;
   }
 }
+
+
 
 .site-navbar-light .navbar-toggler {
   border: none;
@@ -285,11 +308,32 @@ text-shadow: #000000cc 1px 1px 0px !important;
   letter-spacing: .1em;
 }
 
-.site-navbar-light.scrolled .nav-link {
+
+a.nav-link {
   padding-top: 0.7rem !important;
   padding-bottom: 0.7rem !important;
   color: #000;
 }
+
+
+
+@media screen and (max-width: 600px) {
+a.nav-link{
+  padding-left: 0.5rem !important;
+}
+
+div.toggler-right {
+  margin-right: 0.5em !important;
+}
+
+div.brand-left {
+  margin-left: 0.5em !important;
+
+}
+
+}
+
+
 
 .site-navbar-light.scrolled .nav-link.active {
   color: #ffffff !important;
