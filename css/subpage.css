@@ -4,6 +4,20 @@ body {
     background-size: cover;
 }
 
+
+.subpage-header {
+    height: 80vh;
+    }
+  
+    @media screen and (max-width: 960px) {
+      .subpage-header {
+        height: inherit;
+        padding-top: 3em;
+        padding-bottom: 3em;
+      }
+    }
+
+    
 /* About Subpage */
 
 #about-header {
