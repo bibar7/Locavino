@@ -64,7 +64,7 @@ div.wrapper {
     -o-background-size: cover;
     background-size: cover;
   }
-  
+
 
 /* Food Menu Section */
 
@@ -111,8 +111,8 @@ div.wrapper {
 
 
 #locavino-food-menu img {
-	width: 300px;
-	box-shadow: 15px 0 #a7c44c;
+    width: 18px;
+    vertical-align:middle
 }
 
 #locavino-food-menu .menu-section hr {
@@ -179,3 +179,8 @@ div.wrapper {
 padding: 0 !important;
     }
 }
+/* 
+.vegetarian-option span, .vegetarian-option img {
+    display:inline-block;
+    vertical-align:top;
+} */
