@@ -1573,4 +1573,7 @@ img.visit-image {
     border: 3px #00acb8 solid;
   }
 
-  
+  ul.footer-list li a {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
