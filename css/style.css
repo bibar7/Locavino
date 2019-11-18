@@ -147,16 +147,16 @@ letter-spacing: 0.05em;
 }
 
 a.navbar-brand img {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .site-navbar-light {
-  background: #99663395;
+  background: #ffffff74;
   position: absolute;
   left: 0;
   right: 0;
   z-index: 3;
-  color: #fff !important;
+  color: #000 !important;
 
 }
 
