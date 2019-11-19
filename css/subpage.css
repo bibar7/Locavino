@@ -5,15 +5,15 @@ body {
 }
 
 
-.subpage-header {
-    height: 80vh;
-    }
+/* header {
+    height: 80vh !important;
+    } */
   
     @media screen and (max-width: 960px) {
-      .subpage-header {
-        height: inherit;
-        padding-top: 3em;
-        padding-bottom: 3em;
+    header {
+        /* height: inherit; */
+        /* padding-top: 3em;
+        padding-bottom: 3em; */
       }
     }
 
@@ -220,6 +220,40 @@ z-index: 2;
     padding: 5%;
 }
 
+#menu-subpage-header {
+    height: 65vh;
+    padding: 2.5em !important;
+}
+
+@media screen and (min-width: 401px) and (max-width: 555px){
+
+#menu-subpage-header {
+    height: 55vh !important;
+    padding: 1.5em !important;
+
+}
+
+#menu-subpage-header h1 {
+    font-size: 85px;
+
+}
+ #menu-subpage-header .subpage-title{
+    margin-top: -4vh !important;
+ }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+    #menu-subpage-header .subpage-title{
+        margin-top: -5vh !important;
+     }
+    #menu-subpage-header h1 {
+        line-height: 1.35 !important;
+     }
+}
+
 .beer-subpage-header {
     background: #82604D url("../images/bg/beer.jpg") no-repeat center center; 
     -webkit-background-size: cover;
@@ -232,7 +266,7 @@ z-index: 2;
 
     body#locavino-full-menu-subpage {
         font-size: 15px;
-        letter-spacng: 0.01em
+        letter-spacing: 0.01em
     }
 
     #locavino-full-menu-subpage div.wrapper {
@@ -394,12 +428,38 @@ padding: 0 !important;
 /* Contact Subpage */
 
 #locavino-contact-us-subpage #contact-header {
+height: 65vh;
+padding: 2.5em !important;
 
     background: #00acb8 url("../images/bg/cards.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+@media screen and (min-width: 960px){
+    #locavino-contact-us-subpage .main-title {
+        margin-top: 15vh !important;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 960px){
+    #locavino-contact-us-subpage .main-title {
+        margin-top: 12vh !important;
+    }
+}
+@media screen and (max-width: 600px){
+    #locavino-contact-us-subpage .main-title {
+        margin-top: 4vh !important;
+        line-height: 1.35 !important;
+        
+    } 
+
+    #contact-header {
+        height: 57vh !important;
+        padding: 1.5em !important;
+
+    }
 }
 
 #locavino-contact-us-subpage .contact-title {
