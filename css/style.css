@@ -1187,13 +1187,20 @@ margin-top: 3%;
 .footer-social-links {
   margin-top: 2vh;
 }
-.site-social li, 
+
+ul.site-footer-social {
+  margin-left: 12%;
+  margin-right: auto;
+}
+
+.site-social li,
 .site-footer-social li {
   list-style: none;
   margin: 0 10px 10px 0;
   display: inline-block;
 
 }
+
 
 .site-social li a {
   height: 60px;
