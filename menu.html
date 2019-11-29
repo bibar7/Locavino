@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html prefix="og: https://www.locavino.com/menu.html" lang="en" dir="ltr">
+<html prefix="og: https://www.locavino.com/menu.html">
+<html lang="en">
   
   <head>
     <title>Menu | Locavino, a local Wine Cafe in Downtown Silver Spring</title>
@@ -7,7 +8,7 @@
 
 <!-- Enabling responsive viewing -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0. user-scalable=0, shrink-to-fit=no"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Remove mobile text styling -->
 <meta name="format-detection" content="telephone=no">
@@ -15,14 +16,14 @@
 
     <!-- SEO Tags for search engines -->
 <meta name="description" content="The official home website for Locavino, a locally sourced wine bar in downtown Silver Spring serving wine, beer, cider, and food.">
-<meta name="keywords" content="locavino, locavino menu, locavino food, locavino vegetarian, silver spring sandwiches, silver spring pasta, wine bar, wine bar silver spring, café silver spring, cafe silver spring, café downtown silver spring, wine silver spring, wine and beer, local wine, silver spring wine, vegetarian silver spring, dtss vegetarian, silver spring alcohol, downtown silver spring, dtss, locally sourced, local, restaurant, chill spot, dinner, drinks, snacks, evening date, cafe, wine cafe, wine café, café, beer cafe, beer café, wine amd beer cafe, wine and beer café, wine in downtown silver spring, wine in silver spring, happy hour, silver spring happy hour, drinks downtown silver spring, dinner silver spring, dinner downtown silver spring, dinner in downtown silver spring, dinner dtss, drinks in downtown silver spring, drinks silver spring, drinks dtss, happy hour dtss">
+<meta name="keywords" content="wine bar, wine, beer, cider, hard cider, alcohol, silver spring, downtown silver spring, locally sourced, local, restaurant, chill spot, dinner, drinks, snacks, evening date, cafe, wine cafe, wine café, café, beer cafe, beer café, wine amd beer cafe, wine and beer café, wine in downtown silver spring, wine in silver spring, happy hour, silver spring happy hour, drinks downtown silver spring, dinner silver spring, dinner downtown silver spring, dinner in downtown silver spring, drinks in downtown silver spring">
 
     <!-- SEO Tags for Facebook -->
 
 <meta property="og:type" content=“website”> 
 <meta property="og:url" content="https://www.locavino.com/menu.html"> 
 <meta property="og:title" content="Locavino, a local Wine Bar in Downtown Silver Spring"> 
-<meta property="og:image:secure_url" content="https://www.locavino.com/images/bg/beer.jpg"> 
+<meta property="og:image:secure_url" content="https://www.locavino.com/images/bg/beer.webp"> 
 <meta property="og:image:alt" content="People sitting in a gold-wood finished cafe with bottles of wine stacked nearby">
 <meta property="og:description" 
 content="The official home website for Locavino, a locally sourced wine bar in downtown Silver Spring.">
@@ -45,14 +46,24 @@ content="The official home website for Locavino, a locally sourced wine bar in d
 
 <!-- Stylesheets -->
 
+    <link rel="stylesheet" href="css/reset.css">
 
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+   
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,300i,400,600,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Raleway:400,400i,700,700i&display=swap" rel="stylesheet">
+
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Subpage Stylesheet -->
+    <link rel="stylesheet" href="css/subpage.css">
 
     <script src="https://kit.fontawesome.com/e70f5a63c7.js" crossorigin="anonymous"></script>
 
@@ -64,25 +75,25 @@ content="The official home website for Locavino, a locally sourced wine bar in d
     <nav class="navbar navbar-expand-lg site_navbar site-navbar-light" id="site-navbar">
       <div class="container">
 
-       <div class="brand-left">
-        <a class="navbar-brand" href="index.html">                
-          <img src="https://www.locavino.com/images/logos/locavino-logo-min.png" alt="Locavino a wine café">
-        </a>
-      </div>
-
-        <div class="toggler-right">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fas fa-bars"></span> Menu
-        </button>
-      </div>
+          <div class="brand-left">
+              <a class="navbar-brand" href="index.html">                
+                <img src="https://www.locavino.com/images/logos/locavino-logo-min.png" alt="Locavino a wine café">
+              </a>
+            </div>
+      
+              <div class="toggler-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span> Menu
+              </button>
+            </div>
 
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="menu.html" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="index.html#section-gallery" class="nav-link">Gallery</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item active"><a href="menu.html" class="nav-link">Menu</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="index.html#section-gallery" class="nav-link">Gallery</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -96,7 +107,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
           <div class="col-md-12">
             <div class="subpage-title">
               <h5 class="welcome" style="margin-top: 20px;">Locavino</h5>
-              <h1 class="site-heading site-animate mb-3 main-title">Food Menu</h1>              
+              <h1 class="site-heading site-animate mb-3 main-title" itemprop="name">Food Menu</h1>              
             </div>
             </div>
             </div>
@@ -105,7 +116,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
     <!-- END section -->
 
     <!-- Food Menu Section -->
-<main>
+
 <section id="locavino-food-menu">
     <div class="full-menu-container">
   <div class="wrapper">
@@ -407,7 +418,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
   
         <div class="col-md-12 menu-warning">
           
-    <p class="menu-download-btn"><a href="documents/menu.pdf" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg" style="font-size: 40px;">Download Menu</a></p>
+    <p class="menu-download-btn"><a href="documents/menu.pdf" target="_blank" class="btn btn-outline-white btn-lg" style="font-size: 40px;">Download Menu</a></p>
 
         </div>
       </div>
@@ -432,7 +443,7 @@ content="The official home website for Locavino, a locally sourced wine bar in d
     
     </script>    
     <!-- END section -->
-    </main>
+    
 
     <footer class="site-footer site-section hardwood-section-bg">
         <div class="container">
@@ -449,23 +460,22 @@ content="The official home website for Locavino, a locally sourced wine bar in d
                   <div class="site-footer-widget mb-4 fadeInUp site-animated">
                       <h3 class="site-heading-2 footer-heading">The Restaurant</h3>
                       <ul class="footer-list list-unstyled">
-                          <li><a href="about.html" class="footer-site-link py-2 d-block">About Us</a></li>
-                          <li><a href="menu.html" class="footer-site-link py-2 d-block">Full Menu</a></li>
-                          <li><a href="contact.html" class="footer-site-link py-2 d-block">Contact</a></li>    
+                      <li><a href="about.html" class="py-2 d-block" style="color: white;">About Us</a></li>
+                      <li><a href="menu.html" class="py-2 d-block" style="color: white;">Full Menu</a></li>
+                      <li><a href="contact.html" class="py-2 d-block" style="color: white;">Contact</a></li>
                     </ul>
                   </div>
                 </div>
          
               <div class="col-md-4 site-animate">
-                <div class="site-footer-widget mb-4 mx-auto d-flex">
-                  <div class="footer-logo justify-content-center">
-                      <img class="footer-logo lazyload" src="https://www.locavino.com/images/logos/locavino-logo-white.png" alt="Locavino wine bottle icon">
-                      
-                      <div class="footer-social-links list-inline">
-                        <ul class="site-footer-social list-unstyled">
-                        <li class="site-animate fadeInUp site-animated"><a class="follow" href="https://www.facebook.com/locavino/" target="_blank" rel="noopener"><span class="fab fa-facebook-f"></span></a></li>
-                        <li class="site-animate fadeInUp site-animated"><a class="follow" href="https://twitter.com/locavinodtss?lang=en" target="_blank" rel="noopener"><span class="fab fa-twitter"></span></a></li>
-                        <li class="site-animate fadeInUp site-animated"><a class="follow" href="https://www.yelp.com/biz/locavino-silver-spring" target="_blank" rel="noopener"><span class="fab fa-yelp"></span></a></li>
+                 <div class="site-footer-widget mb-4">
+                <div class="footer-logo">
+                    <img class="footer-logo" src="https://www.locavino.com/images/logos/locavino-logo-white.png" atl="Locavino wine bottle icon">
+                    <div class="footer-social-links">
+                      <ul class="site-footer-social list-unstyled text-center">
+                        <li class="site-animate fadeInUp site-animated"><a href="https://www.facebook.com/locavino/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                        <li class="site-animate fadeInUp site-animated"><a href="https://twitter.com/locavinodtss?lang=en" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                        <li class="site-animate fadeInUp site-animated"><a href="https://www.yelp.com/biz/locavino-silver-spring" target="_blank"><span class="fab fa-yelp"></span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -478,8 +488,8 @@ content="The official home website for Locavino, a locally sourced wine bar in d
         <div class="row site-animate fadeInUp site-animated">
         
           <div class="col-md-12 text-center">
-            <p class="copyright">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>. Customized by Biagg<a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a>. Customized by <a href="https://www.bellevisite.com" target="_blank" rel="noopener">Biaggi Barber</a>.
+            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>. Customized by Biaggi Barber.
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -493,10 +503,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
 
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
