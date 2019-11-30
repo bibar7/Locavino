@@ -13,7 +13,7 @@
     width: 50vw; 
     height: 35vw;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: -10%;
 
   }
 
@@ -21,7 +21,7 @@
       .bubbly-image {
           width: 40vw;
           height: 28vw;
-          margin-left: -10%!important;
+          /* margin-left: -10%!important; */
       }
   }
 
